@@ -66,12 +66,13 @@ async def is_owner(user_id):
 async def helpstr(message: types.Message):
     # await message.answer_chat_action('typing')
     keyboard_markup = types.InlineKeyboardMarkup(row_width=3)
-    btns = types.InlineKeyboardButton("📢grupo de telegram📢", url="https://t.me/+za4ly0IZ5D8yY2Vh")
+    btns = types.InlineKeyboardButton("📢grupo de telegram📢", url="https://t.me/+VuaZA6NwVNdlZDIx")
     keyboard_markup.row(btns)
     FIRST = message.from_user.first_name
     MSG = f'''
 👋Hola {FIRST}, soy {BOT_NAME},
-puedes encontrar mi creador  <a href="tg://user?id={OWNER}">👈AQUI.</a>
+puedes encontrar mi creador  <a href="https://t.me/TheyAreLegion">👈AQUI.</a>
+puedes encontrar mi cofunder  <a "https://t.me/c/1803443778/10">👈AQUI.</a>
 Cmds /chk /info /bin'''
     await message.answer(MSG, reply_markup=keyboard_markup,
                         disable_web_page_preview=True)
