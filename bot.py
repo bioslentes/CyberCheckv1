@@ -67,12 +67,13 @@ async def helpstr(message: types.Message):
     # await message.answer_chat_action('typing')
     keyboard_markup = types.InlineKeyboardMarkup(row_width=3)
     btns = types.InlineKeyboardButton("📢grupo de telegram📢", url="https://t.me/+VuaZA6NwVNdlZDIx")
+    btns = types.InlineKeyboardButton("✨fundador✨", url="https://t.me/TheyAreLegion")
+    btns = types.InlineKeyboardButton("✨cofundador✨", url="https://t.me/Calvitos")
     keyboard_markup.row(btns)
     FIRST = message.from_user.first_name
     MSG = f'''
-👋Hola {FIRST}, soy {BOT_NAME},
-puedes encontrar mi creador  <a href="@theyarelegion">👈AQUI.</a>
-puedes encontrar mi cofunder  <a "@calvito">👈AQUI.</a>
+👋Hola {FIRST}, soy {BOT_NAME},\n
+👇puedes encontrar mi creador y mi cofundador AQUI👇
 Cmds /chk /info /bin'''
     await message.answer(MSG, reply_markup=keyboard_markup,
                         disable_web_page_preview=True)
