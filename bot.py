@@ -71,8 +71,8 @@ async def helpstr(message: types.Message):
     FIRST = message.from_user.first_name
     MSG = f'''
 👋Hola {FIRST}, soy {BOT_NAME},
-puedes encontrar mi creador  <a href="https://t.me/TheyAreLegion">👈AQUI.</a>
-puedes encontrar mi cofunder  <a "https://t.me/c/1803443778/10">👈AQUI.</a>
+puedes encontrar mi creador  <a href="@theyarelegion">👈AQUI.</a>
+puedes encontrar mi cofunder  <a "@calvito">👈AQUI.</a>
 Cmds /chk /info /bin'''
     await message.answer(MSG, reply_markup=keyboard_markup,
                         disable_web_page_preview=True)
